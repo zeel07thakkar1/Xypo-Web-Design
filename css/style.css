@@ -1,0 +1,234 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --blue : #464eba;
+    --pink : #d66f85;
+    --light-pink : #ffa0b8;
+}
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+.side-nav
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -25%;
+    width: 23%;
+    height: 100%;
+    background-color: var(--light-pink);
+    padding: 50px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.menu-btn
+{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    top: 32px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.right_0
+{
+    right: 0px !important;
+}
+#section1
+{
+    height: 100vh;
+    background-image: url('../images//background.png');
+    background-size: cover;
+    background-position: center center;
+}
+.logo
+{
+    width: 100px;
+}
+h1{
+    font-size: 40px !important;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+h4{
+    font-size: 19px !important;
+    font-weight: bold !important;
+}
+.w-40
+{
+    width: 40%;
+}
+.font-15
+{
+    font-size: 15px;
+}
+.font-22
+{
+    font-size: 22px;
+}
+.banner-text
+{
+    margin-top: 10rem;
+}
+.banner-text h1 , .about-div-right h1{
+    color: var(--blue);
+}
+.pink-box
+{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: var(--light-pink);
+}
+.features-row .pink-transparent-btn
+{
+        width: 25%;
+}
+.pink-transparent-btn
+{
+    border: 2px solid #d66f85 !important;
+    color: black !important;
+   
+}
+.pink-transparent-btn:hover
+{
+    background: #353a84;
+    color: white !important;
+    transition: 0.5s all ease-in;
+    -webkit-transition: 0.5s all ease-in;
+    -moz-transition: 0.5s all ease-in;
+    -ms-transition: 0.5s all ease-in;
+    -o-transition: 0.5s all ease-in;
+   
+}
+.lines
+{
+    height: 50px;
+}
+.line-1
+{
+    height: 15px;
+    width: 15px;
+    background-color: var(--light-pink);
+    
+}
+.line-2
+{
+    height: 2px;
+    width: 80px;
+    background-color: var(--light-pink);
+}
+.line-3
+{
+    height: 2px;
+    width: 60px;
+    background-color: var(--light-pink);
+
+}
+#about-section , #course-section , #offer-section , #contact-section 
+{
+    max-width: 100%;
+}
+.about-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.contact-form
+{
+    width: 75%;
+}
+.contact-form input.form-control
+{
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -ms-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    border:2px solid var(--light-pink);
+}
+.contact-left-row h4{
+    color: var(--pink);
+}
+.side-nav-social
+{
+    position: fixed;
+    top: 50%;
+    left: -5px;
+    padding: 0px;
+    transform: translate(0 , -50%);
+    -webkit-transform: translate(0 , -50%);
+    -moz-transform: translate(0 , -50%);
+    -ms-transform: translate(0 , -50%);
+    -o-transform: translate(0 , -50%);
+   
+    
+}
+.side-nav-social i{
+    color:white;
+    transition: 0.9s all;
+    font-size: 13px;
+    background-color: var(--pink);
+    padding: 11px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.side-nav-social i:hover
+{
+    color: white;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    background-color: var(--blue);
+    
+}
+
+@media screen and (max-width:767px) {
+    h1
+    {
+        font-size: 27px !important;
+    }
+    .side-nav
+    {
+        width: 65%;
+        right: -65%;
+    }
+    #section1
+    {
+        background-image: none;
+        height: auto;
+    }
+    .banner-text
+    {
+        margin-top: 3rem;
+        padding:0px 3rem 0px 73px;
+    }
+    .w-40{
+        width: 100%;
+    }
+    .features-row .pink-transparent-btn
+    {
+        width: 50%;
+    }
+    .contact-form
+    {
+        width: 100%;
+    }
+
+}
+
