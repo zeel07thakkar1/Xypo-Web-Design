@@ -203,6 +203,7 @@ h4{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    cursor: pointer;
 }
 .side-nav-social i:hover
 {
